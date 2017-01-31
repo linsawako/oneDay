@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/latest_news_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:id="@+id/latest_news_image"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/latest_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="6dp"
+            android:text="test for this app"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

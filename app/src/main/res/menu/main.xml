@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_search"
+        android:title="search"
+        android:icon="@drawable/search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/item_night"
+        android:title="night"
+        android:icon="@drawable/agriculture"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_setting"
+        android:title="setting"
+        android:icon="@drawable/set"
+        app:showAsAction="never"
+        />
+</menu>
