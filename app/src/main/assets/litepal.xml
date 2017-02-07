@@ -1,0 +1,7 @@
+<litepal>
+    <dbname value="oneday"></dbname>
+    <version value="2" />
+    <list>
+        <mapping class="com.example.linsawako.zhihu.bean.Schedule"/>
+    </list>
+</litepal>

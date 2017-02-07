@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_coordinartorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
@@ -18,20 +19,23 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         <it.neokree.materialtabs.MaterialTabHost
             android:id="@+id/materialTabHost"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="40dp"
             app:textColor="#FFFFFF"
             app:primaryColor="?attr/colorPrimary"
-            app:accentColor="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+            app:accentColor="?attr/colorPrimary" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v4.view.ViewPager>
 
 </android.support.design.widget.CoordinatorLayout>

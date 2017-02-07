@@ -41,16 +41,6 @@ public class ZhiHuApi {
        zhiHuService = retrofit.create(ZhiHuService.class);
     }
 
-    /*public static ZhiHuService getZhihuService() {
-        if (zhiHuService == null) {
-            synchronized (ZhiHuService.class) {
-                if (zhiHuService == null) {
-                    new ZhiHuApi();
-                }
-            }
-        }
-        return zhiHuService;
-    }*/
 
     public static ZhiHuApi getInstance(){
         if (zhiHuApi == null) {

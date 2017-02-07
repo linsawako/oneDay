@@ -39,7 +39,6 @@ public class NewsFragment extends Fragment implements NewsContract.View, DatePic
         View view = inflater.inflate(R.layout.fragment_zhihu_daily, container, false);
 
         FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
-        fab.setImageResource(R.drawable.add);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -44,6 +44,8 @@ dependencies {
     compile 'com.google.android.gms:play-services:10.0.1'
     compile 'com.android.support:multidex:1.0.0'
     compile 'it.neokree:MaterialTabs:0.11'
-    compile 'com.github.tibolte:agendacalendarview:1.0.4'
+    //compile 'com.github.tibolte:agendacalendarview:1.0.4'
+    compile 'com.hanks.animatecheckbox:library:0.1'
+    compile 'org.litepal.android:core:1.4.1'
     testCompile 'junit:junit:4.12'
 }

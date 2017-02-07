@@ -14,7 +14,7 @@ import android.view.MenuItem;
 
 import com.example.linsawako.zhihu.R;
 import com.example.linsawako.zhihu.adapter.MyFragmentPagerAdapter;
-import com.example.linsawako.zhihu.fragment.TestFragment;
+import com.example.linsawako.zhihu.fragment.ScheduleFragment;
 import com.example.linsawako.zhihu.zhihudaily.news.NewsFragment;
 
 import java.util.ArrayList;
@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity
 
         fragmentList = new ArrayList<>();
         fragmentList.add(new NewsFragment());
-        fragmentList.add(new TestFragment());
-        fragmentList.add(new TestFragment());
+        fragmentList.add(new ScheduleFragment());
+        //fragmentList.add(new TestFragment());
 
         //fragment = (NewsFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
 
