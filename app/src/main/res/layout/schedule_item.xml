@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/schedule_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/schedule_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="6dp"
+            android:maxLength="100"
+            android:ellipsize="end"
+            android:text="test for this app"
+            android:paddingBottom="20dp"/>
+
+        <com.hanks.library.AnimateCheckBox
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            app:animDuration="200"
+            app:checkedColor="#526296"
+            app:lineColor="#fff"
+            app:lineWidth="1.2dp"
+            app:unCheckColor="?attr/colorPrimary"
+            android:id="@+id/schedule_checkbox"
+            android:layout_below="@id/schedule_text"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017/2/5"
+            android:layout_below="@+id/schedule_text"
+            android:layout_toStartOf="@+id/schedule_checkbox"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
